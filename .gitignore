@@ -21,7 +21,6 @@ build
 *.suo
 *.opendb
 *.keystore
-**/.vs/**
 **/bin/**
 !tests/rust_usage_test/bin/**
 **/gen/**
@@ -151,3 +150,9 @@ flatbuffers.pc
 _deps/
 /enc_temp_folder/
 /cmake-build-debug/
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json
+/.vs/cmake.db
+/.vs/CMake Overview
+/.vs/flatbuffers-2.0.7/
