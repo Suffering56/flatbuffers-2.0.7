@@ -604,6 +604,8 @@ int FlatCompiler::Compile(int argc, const char **argv) {
       } else if (arg == "--annotate") {
         if (++argi >= argc) Error("missing path following: " + arg, true);
         annotate_schema = flatbuffers::PosixPath(argv[argi]);
+      } else if (arg == "--ignore-server-only") {
+        opts.ignore_server_only = true;
       } else {
         for (size_t i = 0; i < params_.num_generators; ++i) {
           if (arg == "--" + params_.generators[i].option.long_opt ||
