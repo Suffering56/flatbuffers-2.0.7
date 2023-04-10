@@ -845,6 +845,7 @@ class Parser : public ParserState {
     known_attributes_["flexbuffer"] = true;
     known_attributes_["private"] = true;
     known_attributes_["server_only"] = true;
+    known_attributes_["server_only_root"] = true;
   }
 
   ~Parser() {
