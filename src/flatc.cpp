@@ -224,6 +224,7 @@ const static FlatCOption options[] = {
   { "", "no-leak-private-annotation", "",
     "Prevents multiple type of annotations within a Fbs SCHEMA file."
     "Currently this is required to generate private types in Rust" },
+  { "", "ignore-server-only", "", "Skipping server only fields when converting JSON to binary" },
 };
 
 static void AppendTextWrappedString(std::stringstream &ss, std::string &text,
